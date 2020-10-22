@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+@keyframes fadeIn {
+  0% {opacity: 0; margin-top: 0vh;}
+  100% {opacity: 1; margin-top: inherit;}
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/*navigation bar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #383838;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar .nav-logo {
+  float: left;
+  background: #383838;
+  padding: 9.5px 4.5%;
+}
+
+.navbar .nav-logo:hover {
+  background: #383838;
+}
+
+.nav-logo img{
+  width: 160px;
+}
+
+.nav-logo img:hover{
+  filter: brightness(0) invert(1);
+}
+
+.navbar a {
+  font-family: 'Bebas Neue', cursive;
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 21px 4.5%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ffc400;
+  color: #383838;
+}
+
+
+/* landing page */
+
+.full {
+  /* The image used */
+  background-image: url("./img/main2.png");
+
+  /* Full height */
+  height: 90vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  vertical-align: baseline;
+
+  padding-top: 10%;
+}
+
+.full h1:first-child {
+  font-size: 17vh;
+}
+
+.arrow {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10vh;
+  text-align: center;
+  animation: fadeIn 1.8s;
+}
+
+.arrow img{
+  width: 7.5vh;
+}
+
+.arrow img:hover{
+  margin-top: -.5vh;
+  width: 8vh;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  font-size: 22vh;
+  text-align: center;
+  line-height: 1em;
+  animation: fadeIn 1.8s;
+}
+
+
+/* main content */
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  color: #383838;
+  font-size: 2.8em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #383838;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+.main div {
+  padding: 7vh 0;
+  width: 60em;
+  margin: auto;
+}
+
+
+/* footers */
+
+.footer {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.footer p {
+  color: #e6e6e6;
+  font-size: 1em;
+  padding: 10vh 0;
+}
