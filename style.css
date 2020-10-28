@@ -12,6 +12,74 @@ body, html {
   scroll-behavior: smooth;
 }
 
+div {
+  padding: 7vh 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  font-size: 22vh;
+  text-align: center;
+  line-height: 1em;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  font-size: 17vh;
+  text-align: center;
+  line-height: 1em;
+
+}
+
+h3 {
+  font-family: 'Bebas Neue', cursive;
+  color: #383838;
+  font-size: 2.8em;
+}
+
+p, ul {
+  font-family: 'Roboto', sans-serif;
+  color: #383838;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  list-style-type: square;
+}
+
+button {
+  border: 5px solid #ffc400;
+  color: #fff;
+  background-color: #ffc400;
+  padding: .7em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.8em;
+  margin: 0 .9em;
+
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  color: #ffc400;
+  background-color: #fff;
+}
+
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: baseline;
+}
+
 /*navigation bar*/
 
 .navbar {
@@ -57,28 +125,16 @@ body, html {
   color: #383838;
 }
 
-
 /* landing page */
 
 .full {
-  /* The image used */
   background-image: url("./img/main.png");
-
-  /* Full height */
   height: 90vh;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  vertical-align: baseline;
-
-  padding-top: 10%;
+  padding: 10% 0 0 0;
 }
 
-.full h1:first-child {
-  font-size: 17vh;
+.full div{
+  padding: 0;
 }
 
 .arrow {
@@ -94,6 +150,7 @@ body, html {
 
 .arrow img{
   width: 7.5vh;
+  transition: .2s;
 }
 
 .arrow img:hover{
@@ -101,39 +158,56 @@ body, html {
   width: 8vh;
 }
 
-h1 {
-  margin: 0;
-  font-family: 'Bebas Neue', cursive;
-  color: #fff;
-  font-size: 22vh;
-  text-align: center;
-  line-height: 1em;
-  animation: fadeIn 1.8s;
-  -webkit-animation: fadeIn 1.8s;
+/* banner styles */
+#why {
+  background-image: url("./img/why.png");
 }
 
-
-/* main content */
-
-h2 {
-  font-family: 'Bebas Neue', cursive;
-  color: #383838;
-  font-size: 2.8em;
+#how {
+  background-image: url("./img/how.png");
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  color: #383838;
-  font-size: 1.4em;
-  line-height: 1.6em;
+#what {
+  background-image: url("./img/what.jpg");
 }
 
-.main div {
-  padding: 7vh 0;
+/* content styles */
+
+.content div{
   width: 60em;
   margin: auto;
 }
 
+.content img{
+  width: 60em;
+}
+
+.row {
+  display: flex;
+}
+
+.compact div{
+  padding: 0;
+}
+
+.column {
+  flex: 50%;
+  padding: 0;
+}
+
+.column img{
+  width: 27em;
+}
+
+.right {
+  float:right;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* footers */
 
@@ -142,10 +216,25 @@ p {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  background-color: #383838;
+  padding: 7vh 0;
 }
 
 .footer p {
-  color: #e6e6e6;
+  color: #717171;
   font-size: 1em;
-  padding: 10vh 0;
+  margin: 2em;
+}
+
+.footer a {
+  margin: .7em;
+}
+
+.footer img {
+  width:2em;
+  transition: .2s;
+}
+
+.footer img:hover {
+  filter: brightness(1.5);
 }
